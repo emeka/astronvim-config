@@ -7,4 +7,23 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.java" },
+  {
+    "mfussenegger/nvim-jdtls",
+    opts = {
+      settings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "JavaSE-11",
+                path = "/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
 } 
